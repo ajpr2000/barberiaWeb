@@ -1,0 +1,249 @@
+body{
+    font-family: 'Secular One', sans-serif;
+
+}
+
+
+#bannerEdit{
+    width: 20%;
+}
+
+header{
+    background-color: #bbbbbb;
+    padding: 25px;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 75px;
+    right: 50px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 20px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+nav a:hover{
+    color: #ffffff;
+    font-size: 22px;
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.cortes{
+    width: 840px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.cortes li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 12px;
+    box-sizing: border-box;
+    border: 2px dashed #000000;
+    border-top: 15px solid #000000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: 0.5s;
+}
+
+.cortes li:hover{
+    border: 2px solid #ffd700;
+    border-radius: 15px;
+    line-height: 1.1;
+    transform: scale(1.1);
+}
+.cortes h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.cortes li:active{
+    border-color: #7ff000;
+}
+
+.pDescriccion{
+    font-size: 20px;
+}
+.pPrecio{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer img{
+    width: 10%;
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+    background: url(recursos/textura.jpg);
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.Copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*CONTACTOS */
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 20px 0;
+}
+
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+form legend{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.input-style{
+    display: block;
+    margin: 0 0 15px;
+    padding: 10px 20px;
+    width: 40%;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+.mensajeUsuario{
+    border-radius: 10px;
+}
+.labelContacto label{
+    border: 1px solid #000000;
+    padding: 5px;
+    color: #7ff000;
+    background: #696969;
+    display: inline-block;
+    border-radius: 10px;
+}
+.labelContacto label:hover{
+    transform: scale(1.05);
+}
+
+select{
+    padding: 10px;
+    border-radius: 6px ;
+    color: #7ff000;
+    background: #696969 ;
+}
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #ffd700;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.enviar:hover{
+    font-size: 22px;
+    background: #887401;
+    border: 1px;
+    border-radius: 18px;
+    font-size: 22px;
+    transform: scale(1.05);
+}
+
+#horarioAtencion{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+table{
+    margin: 40px 30px;
+}
+
+thead{
+    background: #bbbbbb;
+    color: #000000;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 10px;
+}
+
+@media screen and (max-width:480px) {
+    .caja, .cortes, footer{
+        width: auto;
+    }
+    .ocultar-div{
+    display:none;
+    }
+    main{
+        width: auto;
+    }
+
+    .cortes li{
+        margin: 40px auto;
+        width: auto;
+        display: block;
+    }
+
+    #bannerEdit{
+        width: 30%;
+    }
+
+    nav {
+        top: 42px;
+    }
+
+    footer img{
+        width: 40%;
+    }
+    /*contactos*/
+
+    .input-style{
+        width: 80%;
+    }
+    .mensajeUsuario{
+    width: 80%;
+    }
+    .enviar{
+        width: 60%;
+    }
+    form{
+        margin: 20px 20px;
+    }
+    #horarioAtencion{
+        margin: 0 0 0 20px;
+    }
+}

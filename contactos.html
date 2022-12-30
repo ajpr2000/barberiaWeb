@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Tipos de cortes</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-Productos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img id="bannerEdit" src="recursos/productos-cortes/logoBanner.png" alt="Logo"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="paginaONE.html">HOME</a></li>
+                        <li><a href="productos.html">PRODUCTOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombreApellido">Nombre y Apellido</label>
+                <input type="text" id="nombreApellido" class="input-style" required placeholder="Nombre y Apellido">
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" class="input-style" required placeholder="ejemplo@ejemplo.com">
+
+                <label for="numero">Numero celular</label>
+                <input type="tel" id="numero" class="input-style" required placeholder="+XX (XXX-XXXXXXX)">
+
+                <label for="mensaje">Algún comentario?</label>
+                <textarea class="mensajeUsuario" cols="80" rows="10" id="mensaje"></textarea>
+                <fieldset class="labelContacto">
+                    <legend>Como lo contactamos.</legend>
+                    <label for="radio-correo"><input type="radio" name="contactar" value="email" id="radio-correo">Correo</label>
+                    <label for="radio-telefono"><input type="radio" name="contactar" value="Telefono" id="radio-telefono">Telefono</label>
+                    <label for="radio-whatsApp"><input type="radio" name="contactar" value="whatsApp" id="radio-whatsApp" checked>WhatsApp</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Horario en el que quiere que lo atendamos.</legend>
+                    <select >
+                        <option>MAÑANA</option>
+                        <option>TARDE</option>
+                        <option>NOCHE</option>
+                    </select>
+                </fieldset>
+                <label class="checkbox">Quiere recibir notificaciones? <input type="checkbox" checked></label>
+                <input class="enviar" type="submit" value="ENVIAR DATOS">
+            </form>
+            <p id="horarioAtencion">NUESTRO HORARIO DE ANTENCIÓN</p>
+            <table>
+                <thead>
+                    
+                    <tr>
+                        <th>Dias</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes - Viernes</td>
+                        <td>8am - 10pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sabados - Domingos</td>
+                        <td>8am - 8pm</td>
+                    </tr>
+                    <tr>
+                        <td>Festivos</td>
+                        <td>12pm - 8pm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <img src="recursos/logoBannerBlanco.png" alt="Logo">
+            <p class="Copyright">&copy Copyright la Barbería del barrio-2022</p>
+        </footer>
+    </body>
+</html>

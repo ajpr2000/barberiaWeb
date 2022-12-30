@@ -1,0 +1,246 @@
+body{
+    font-family: 'Secular One', sans-serif;
+
+}
+
+header{
+    background: url(recursos/textura.jpg);
+    padding-bottom: 30px;
+}
+
+.cajaPrincipal{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    color: #ffffff;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 20px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+nav {
+    position: absolute;
+    top: 75px;
+    right: 50px;
+}
+nav a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-size: 27px;
+    opacity: 0.5;
+}
+
+.cajaPrincipal img{
+    width: 20%;
+    padding: 20px 20px 30px 20px;
+}
+
+
+.cajaPrincipal h1{
+    position: absolute;
+    font-weight: bold;
+    bottom: 0;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.descriccionGeneral{
+    padding: 30px 30px 0 30px;
+    display: block;
+    text-align: center;
+}
+
+.descriccionGeneral h2{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.descriccionGeneral p{
+    font-size: 20px;
+    padding: 20px 0px;
+}
+.descriccionGeneral strong{
+    font-style: italic;
+    font-weight: bold;
+}
+.descriccionGeneral img{
+    display: inline-block;
+    width: 10%;
+    padding: 0 20px;
+    text-align: center;
+    transition: 1s;
+    border-radius: 30px;
+}
+.descriccionGeneral img:hover{
+    transform: scale(1.05);
+}
+.descriccionGeneral iframe{
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+#caracteristicasGenerales{
+    background: linear-gradient(#ffffff, #080808);
+}
+.caracteristicas{
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h3{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 30px;
+}
+.caracteristicas h2{
+    font-weight: bolder;
+    font-size: 20px;
+    transition: 1s;
+}
+.caracteristicas li{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    margin: 0 2%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 40px;
+    transition: 0.7s;
+}
+
+.caracteristicas li:hover{
+    border: 2px solid #191c38;
+    border-radius: 36px;
+    transform: scale(1.1);
+}
+.caracteristicas li:hover h2{
+    font-size: 22px;
+}
+.caracteristicas img{
+    width: 60%;
+    padding: 20px;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+    transition: 1s;
+}
+.video p{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin: 15px auto 0 auto;
+}
+.video:hover{
+    transform: scale(1.1);
+}
+.botonProducto{
+    text-align: center;
+}
+.botonProducto h3{
+    text-shadow: 1px 1px 50px #ffffff;
+}
+
+#precioProductos{
+   display: inline-block;
+   text-align: center;
+   padding: 0 auto;
+   margin: 20px 0;
+   text-align: center;
+   width: 20%;
+   padding: 40px;
+   border: 2px solid #000000;
+   border-radius: 40px;
+   background: #000000d5;
+   transition: 1s;
+   text-transform: uppercase;
+   color: #ffffff;
+   font-weight: bold;
+   font-size: 20px;
+   text-decoration: none;
+}
+#precioProductos:hover{
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background: #000000;
+    transform: scale(1.1);
+    opacity: 0.5;
+    box-shadow: 5px 5px 10px 5px #ffffff;
+}
+
+footer img{
+    width: 10%;
+}
+
+footer{
+    text-align: center;
+    background: url(recursos/textura.jpg);
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.Copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+@media screen and (max-width:480px) {
+    .cajaPrincipal, .descriccionGeneral,.caracteristicas,.descriccionGeneral iframe{
+        width: auto;
+    }
+    .ocultar-div{
+        display: none;
+    }
+    .cajaPrincipal img{
+        width: 35%;
+    }
+    .cajaPrincipal h1{
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 50%;
+    }
+
+    .descriccionGeneral img{
+        width: 40%;
+    }
+
+    .video p{
+        display: inline-block;
+        font-size: 1em;
+    }
+    
+    .video{
+        text-align: center;
+        width: 93%;
+    }
+    .caracteristicas li{
+        display: block;
+        margin: 5px auto;
+        width: 50%;
+    }
+    #precioProductos{
+        width: 200px;
+        padding: 20px ;
+        font-size: 13px;
+    }
+
+    footer img{
+        width: 30%;
+    }
+    .Copyright{
+        font-size: 9px;
+    }
+}
